@@ -1,7 +1,10 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { GetServerSideProps, NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+
+import nookies from 'nookies';
+import { firebaseAdmin } from '../firebaseAdmin';
 
 const Home: NextPage = () => {
   return (
@@ -35,16 +38,14 @@ const Home: NextPage = () => {
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
+            className={styles.card}>
             <h2>Examples &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
+            className={styles.card}>
             <h2>Deploy &rarr;</h2>
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
@@ -57,8 +58,7 @@ const Home: NextPage = () => {
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Powered by{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
@@ -66,7 +66,38 @@ const Home: NextPage = () => {
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+/**
+ * @description SSR
+ * @note 引数である ctx(context) は Node HTTPServer のreqとresを内包している
+ */
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const cookies = nookies.get(ctx);
+  const session = cookies.session || "";
+
+  // セッションIDを検証して、認証情報を取得する
+  const user = await firebaseAdmin
+    .auth()
+    .verifySessionCookie(session, true)
+    .catch(() => null);
+
+  // 認証情報が無い場合は、ログイン画面へ遷移させる
+  if (!user) {
+    return {
+      redirect: {
+        destination: "/login",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: {
+      email: user.email,
+    },
+  };
+};
+
+export default Home;
