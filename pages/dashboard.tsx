@@ -27,8 +27,6 @@ const DashboardPage: NextPage<{ email: string }> = ({ email }) => {
 
 // SSR
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  console.log(234, ctx);
-  
   const cookies = nookies.get(ctx);
   const session = cookies.session || "";
 
