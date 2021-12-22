@@ -10,7 +10,7 @@ export default async function sessionApi(req: Req, res: Res) {
   const auth = firebaseAdmin.auth();
 
   // Tokenの有効期限
-  const expiresIn = (60 * 60 * 24) * 5 * 1000; // 1日(60 x 60 x 24秒) x 5で5日、ミリ秒で渡すため x 1000
+  const expiresIn = (60 * 60 * 24) * 5; // 1日(60 x 60 x 24秒) x 5で5日
 
   // セッションCookieを作成するためのIDを取得
   const id = (JSON.parse(req.body).id || '').toString();
