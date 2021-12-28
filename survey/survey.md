@@ -23,3 +23,5 @@ form要素に送信先が指定されていない場合、現在のURLに対し�
 現在のURLに対してフォームの送信が行われると、結果的にページがリロードされてしまいます。
 
 https://qiita.com/yokoto/items/27c56ebc4b818167ef9e
+
+## test
