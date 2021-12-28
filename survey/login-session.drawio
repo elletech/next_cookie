@@ -1,0 +1,120 @@
+<mxfile host="65bd71144e">
+    <diagram id="KMWe3To8BXBOkswoU09a" name="ページ1">
+        <mxGraphModel dx="1298" dy="1804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="90" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="77" target="78" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="フロントエンド" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="810" y="-380" width="180" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" style="edgeStyle=none;html=1;exitX=0.006;exitY=0.286;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="16" target="77" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=705;exitPerimeter=0;" parent="1" source="16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="995" y="228" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+                    <mxGeometry x="1290" y="-470" width="310" height="950" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="ログイン" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="-570" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;span&gt;firebaseサーバー&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1390" y="-560" width="110" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.216;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="77" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.007;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="78" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" style="edgeStyle=none;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="78" target="77">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="バックエンド" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="810" y="-10" width="180" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="① Emailとパスワードでfirebaseサーバーにログイン要求を出す" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="-340" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="② 受け取ったEmailとパスワードに対応するユーザを検索する" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1310" y="-330" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="③ ログインユーザー情報を返却" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="-240" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="④ 受け取ったユーザー情報からidtokenを取得する" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="-220" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="⑤ バックエンドにidtokenを渡す" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="-80" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="⑥ idtokenと有効期限でセッションIDの作成のリクエスト" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="35" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="⑦ Session IDを生成する" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1315" y="20" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="95" target="97" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="⑧ 生成したSession IDとユーザーを紐付けた上でDBに保存" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1315" y="50" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="セッションID管理DB" style="shape=table;startSize=35;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="1660" y="55" width="290" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="96" vertex="1">
+                    <mxGeometry y="35" width="290" height="33" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="idtoken" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="97" vertex="1">
+                    <mxGeometry width="97" height="33" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="Session ID" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="97" vertex="1">
+                    <mxGeometry x="97" width="96" height="33" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="97" vertex="1">
+                    <mxGeometry x="193" width="97" height="33" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="96" vertex="1">
+                    <mxGeometry y="68" width="290" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="受け取ったidtoken" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="101" vertex="1">
+                    <mxGeometry width="97" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="生成したSession ID" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="101" vertex="1">
+                    <mxGeometry x="97" width="96" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="101" vertex="1">
+                    <mxGeometry x="193" width="97" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="96" vertex="1">
+                    <mxGeometry y="106" width="290" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="105" vertex="1">
+                    <mxGeometry width="97" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="105" vertex="1">
+                    <mxGeometry x="97" width="96" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="105" vertex="1">
+                    <mxGeometry x="193" width="97" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="⑨ 生成したセッションIDを返却" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="197" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="⑩ セッションIDをCookieに保存" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="770" y="170" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="11 フロントエンドの処理に戻って、ログイン後のトップページに遷移する" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="-70" width="260" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
