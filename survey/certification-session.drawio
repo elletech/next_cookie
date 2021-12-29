@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="KMWe3To8BXBOkswoU09a" name="ページ1">
-        <mxGraphModel dx="525" dy="1427" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="845" dy="1893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -16,7 +16,7 @@
                     <mxGeometry x="1290" y="-470" width="310" height="950" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" value="認証" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="900" y="-570" width="70" height="30" as="geometry"/>
+                    <mxGeometry x="860" y="-520" width="70" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="27" value="&lt;span&gt;firebaseサーバー&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
                     <mxGeometry x="1390" y="-560" width="110" height="20" as="geometry"/>
@@ -72,14 +72,17 @@
                 <mxCell id="117" value="① Session IDをfirebaseサーバーに渡して認証をリクエスト" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1070" y="40" width="180" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="118" value="② セッションID管理DBのsessionIDに対応するidtokenを取得して、取得したidtokenに紐づいているユーザー情報を検索する" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="118" value="② セッションID管理DBのsessionIDに対応するidtokenを取得。取得したidtokenをデコードしてユーザー情報を取得する" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1340" y="70" width="230" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="119" value="③ ユーザー情報を返却" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1020" y="240" width="230" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="120" value="④ 認証がOKかどうかを返却" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="610" y="-80" width="230" height="20" as="geometry"/>
+                <mxCell id="120" value="④ 認証がOKならばページを表示する、NGの場合はログイン画面にリダイレクトする" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="-80" width="250" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.938;entryY=1.193;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="97" target="118" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
