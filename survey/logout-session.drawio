@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="KMWe3To8BXBOkswoU09a" name="ページ1">
-        <mxGraphModel dx="525" dy="1427" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="911" dy="1640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -36,7 +36,7 @@
                 <mxCell id="93" value="①&amp;nbsp;Cookieに保存されているSession IDを取得" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="820" y="30" width="160" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="94" value="③ Session IDに対応したユーザー情報を検索して削除" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="94" value="③ Session IDに対応したユーザー情報(idtoken)を検索して削除" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1315" y="20" width="260" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="109" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="94" target="97" edge="1">
